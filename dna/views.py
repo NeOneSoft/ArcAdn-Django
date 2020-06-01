@@ -62,7 +62,7 @@ class DnaViewSet(viewsets.ModelViewSet):
         return False
 
     @action(detail=True, methods=['GET'])
-    def sequence(self, request, pk=None):
+    def stats(self, request, pk=None):
         dna = self.get_object()
         dna = dna.dna
         return Response({"message": "Dna sequence was found", "dna": dna})
