@@ -1,14 +1,14 @@
-#ARCA DNA
+# ARCA DNA
 
 Django RestApi that store dna strings into Postgresql database
 and evaluate if character string has mutation.
 
-##Modules:
+#Modules:
 
 - dna
 - user authentication (using JWT)
 
-##Requeriments:
+#Requeriments:
 
 - Postgres 4
 - Python 3.8
@@ -45,14 +45,21 @@ $ python3 manage.py migrate
 $ python3 manage.py runserver 127.0.0.1:8000
 ```
 
-##After Server is running
+#After Server is running
 
 - Open your browser at **127.0.0.1:8000**
 
-##User Authentication
+#User Authentication
 
 - To get access to API data you have to be registered as user. To do it stop your local server and create a superuser. For this use the next command:
 ```sh
 python3 manage.py createsuperuser
 (follow the prompt instructions)
 ```
+
+#Unit Test Cases
+
+- Unit test cases command:
+    - server: pytest core/tests/server/test_server.py
+    - auth: pytest core/tests/auth/test_authentication.py
+
