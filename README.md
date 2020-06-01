@@ -1,7 +1,7 @@
 # ARCA DNA
 
 Django RestApi that store dna strings into Postgresql database
-and evaluate if character string has mutation.
+and evaluate if it has mutation.
 
 #Modules:
 
@@ -63,3 +63,19 @@ python3 manage.py createsuperuser
     - server: pytest core/tests/server/test_server.py
     - auth: pytest core/tests/auth/test_authentication.py
 
+#Local URLS
+- api/v1/
+- admin/
+- docs
+
+#Local URL Level 2 Example:
+- http://127.0.0.1:8000/api/v1/POST/mutation/1/dna/ 
+
+#Local URL Level 3 Example:
+- http://127.0.0.1:8000/api/v1/POST/mutation/1/statics/
+
+#Aditionl Functions
+- Documentation
+- User authentication
+- JWT
+- Unit Test
