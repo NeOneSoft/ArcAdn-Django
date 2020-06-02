@@ -3,6 +3,9 @@
 Django RestApi that store dna strings into Postgresql database
 and evaluate if it has mutation.
 
+#URL
+**https://arcadnapp.herokuapp.com/api/v1/**
+
 #Modules:
 
 - dna
